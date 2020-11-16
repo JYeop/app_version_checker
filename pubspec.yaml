@@ -1,6 +1,6 @@
 name: app_version_checker
-description: A simple app version checker only using http request.
-version: 1.0.1
+description: A simple app version checker only using http request. (iOS and Android only)
+version: 1.0.2
 author: JYKIM
 homepage: https://github.com/JYeop/app_version_checker
 

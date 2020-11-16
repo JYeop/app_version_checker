@@ -61,4 +61,3 @@ try {
   return false;
 }
 ```
-# app_version_checker

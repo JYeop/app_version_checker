@@ -17,7 +17,9 @@ class AppVersionChecker {
       if (parsed.querySelectorAll(".hAyfc .htlgb .IQ1z0d .htlgb").length > 3) {
         return CheckerResult(
           true,
-          version: parsed.querySelectorAll(".hAyfc .htlgb .IQ1z0d .htlgb")[3].innerHtml,
+          version: parsed
+              .querySelectorAll(".hAyfc .htlgb .IQ1z0d .htlgb")[3]
+              .innerHtml,
         );
       }
       return CheckerResult(
