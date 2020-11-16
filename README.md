@@ -5,6 +5,8 @@ A simple app version checker only using http request.
 ## Getting Started
 
 ```dart
+import 'package:app_version_checker/app_version_checker.dart';
+
 try {
   String appId = 'your_app_id';
   CheckerResult remoteVersion = await AppVersionChecker.checkVersion(appId);
