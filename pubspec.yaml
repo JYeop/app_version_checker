@@ -1,8 +1,8 @@
 name: app_version_checker
-description: A new Flutter project.
-version: 1.0.0
+description: A simple app version checker only using http request.
+version: 1.0.1
 author: JYKIM
-homepage:
+homepage: https://github.com/JYeop/app_version_checker
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

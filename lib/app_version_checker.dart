@@ -7,7 +7,7 @@ import 'package:http/http.dart' as Http;
 import 'package:package_info/package_info.dart';
 
 class AppVersionChecker {
-  Future<CheckerResult> checkUpdateAndroid(String packageName) async {
+  static Future<CheckerResult> checkUpdateAndroid(String packageName) async {
     try {
       Http.Client client = Http.Client();
       var result = await client.get(
@@ -32,7 +32,7 @@ class AppVersionChecker {
     }
   }
 
-  Future<CheckerResult> checkUpdateIos(String appId) async {
+  static Future<CheckerResult> checkUpdateIos(String appId) async {
     try {
       Http.Client client = Http.Client();
       var result = await client.get(
@@ -62,14 +62,14 @@ class AppVersionChecker {
     }
   }
 
-  Future<CheckerResult> checkVersion(String appId) {
+  static Future<CheckerResult> checkVersion(String appId) {
     if (Platform.isIOS) {
       return checkUpdateIos(appId);
     }
     return checkUpdateAndroid(appId);
   }
 
-  Future<bool> simpleCheck(String appId) async {
+  static Future<bool> simpleCheck(String appId) async {
     try {
       CheckerResult result = await checkVersion(appId);
       if (result.success == false) {

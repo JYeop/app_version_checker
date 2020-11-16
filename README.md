@@ -20,7 +20,7 @@ If you are using the [Semantic Versioning](https://semver.org/), can use another
 ```dart
 try {
   String appId = 'your_app_id';
-  bool remoteVersion = await AppVersionChecker.simpleCheck(appId);
+  bool updateAvailable = await AppVersionChecker.simpleCheck(appId);
   // If the version of Playstore of AppStore, returns true. Otherwise, returns false. 
 } catch(error) {
   print(error);
